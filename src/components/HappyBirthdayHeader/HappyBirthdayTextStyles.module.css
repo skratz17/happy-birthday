@@ -1,0 +1,198 @@
+/** WORD ART */
+
+.wordArt {
+  font-size: 4rem;
+  color: red;
+  animation: word-art-animate 5s ease-in;
+  text-shadow: none;
+}
+
+@keyframes word-art-animate {
+  to {
+    text-shadow: 0px 0px 0 rgb(137,156,213),1px 1px 0 rgb(129,148,205),2px 2px 0 rgb(120,139,196),3px 3px 0 rgb(111,130,187),4px 4px 0 rgb(103,122,179),5px 5px 0 rgb(94,113,170),6px 6px 0 rgb(85,104,161),7px 7px 0 rgb(76,95,152),8px 8px 0 rgb(68,87,144),9px 9px 0 rgb(59,78,135),10px 10px 0 rgb(50,69,126),11px 11px 0 rgb(42,61,118),12px 12px 0 rgb(33,52,109),13px 13px 0 rgb(24,43,100),14px 14px 0 rgb(15,34,91),15px 15px 0 rgb(7,26,83),16px 16px 0 rgb(-2,17,74),17px 17px 0 rgb(-11,8,65),18px 18px 0 rgb(-19,0,57),19px 19px 0 rgb(-28,-9,48), 20px 20px 0 rgb(-37,-18,39),21px 21px 20px rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+  }
+}
+
+/** RALEWAY DOTS */
+
+.ralewayDots {
+  background: linear-gradient(to bottom, var(--blue-color), var(--red-color), var(--blue-color));
+}
+
+.ralewayDots span {
+  font-family: 'Raleway Dots', cursive;
+  color: #fff;
+  padding: 0 1rem;
+  background: linear-gradient(to right, var(--blue-color), var(--red-color), var(--blue-color));
+  animation: raleway-dots-animate-banner 1s ease-in infinite, raleway-dots-animate-text 5s ease-in;
+}
+
+@keyframes raleway-dots-animate-banner {
+  to { background: linear-gradient(to right, var(--red-color), var(--blue-color), var(--red-color)); }
+}
+
+@keyframes raleway-dots-animate-text {
+  33% { color: var(--blue-color); }
+  66% { color: var(--red-color); }
+  100% { color: #fff; }
+}
+
+/** CYBERSPACE */
+
+.cyberspace {
+  height: 80%;
+  background: #000;
+  border-radius: 20px;
+}
+
+.cyberspace span {
+  font-size: 5rem;
+  font-family: 'VT323', monospace;
+  padding: 0 0.5rem;
+  color: #00ff33;
+}
+
+.cyberspace:after {
+  content: '▮';
+  color: #282828;
+  animation: cyberspace-animate 1s ease-in infinite;
+}
+
+@keyframes cyberspace-animate {
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+}
+
+/** BAMBOO SURPRISE */
+
+.bambooSurprise {
+  font-size: 5rem;
+  font-family: 'Hanalei', monospace;
+  color: #aa873c;
+  position: relative;
+}
+
+.bambooSurprise:before, .bambooSurprise:after {
+  content: '🍹';
+  font-size: 3rem;
+  position: absolute;
+  animation: bamboo-surprise-animate-pulse 1s ease-in-out infinite;
+}
+
+.bambooSurprise:before {
+  top: -10%;
+  left: -3%;
+  animation: bamboo-surprise-animate-1 5s ease-in;
+}
+
+.bambooSurprise:after {
+  bottom: -18%;
+  right: -3%;
+  animation: bamboo-surprise-animate-2 5s ease-in;
+}
+
+@keyframes bamboo-surprise-animate-1 {
+  80% {
+    left: 97%;
+    top: -10%;
+  }
+
+  100% {
+    left: 97%;
+    top: 50%;
+  }
+}
+
+@keyframes bamboo-surprise-animate-2 {
+  80% {
+    right: 97%;
+    bottom: -18%;
+  }
+
+  100% {
+    right: 97%;
+    bottom: 50%;
+  }
+}
+
+/** BLUR */
+
+.blurredBoi {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.blurredBoi span:nth-child(1) {
+  animation: blur-animate 3s ease-in;
+}
+
+.blurredBoi span:nth-child(2) {
+  animation: blur-animate 3s ease-in 1s;
+}
+
+.blurredBoi span:nth-child(3) {
+  animation: blur-animate 3s ease-in 2s;
+}
+
+@keyframes blur-animate {
+  50% { text-shadow: 0 0 15px rgba(0,0,0,0.5); }
+  100% { text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+}
+
+/** YETI */
+
+.yeti {
+  position: relative;
+  background: url(yeti.jpg) no-repeat 50% 20% / 100% 120%;
+  height: 100%;
+  width: 800px;
+}
+
+.yeti span {
+  color: #333;
+  margin: 0 0.5rem;
+  animation: yeti-animate-1 3s ease-in 1s;
+  position: absolute;
+}
+
+.yeti span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.yeti span:nth-child(2) {
+  color: #aaa;
+  animation: yeti-animate-2 3s ease-in 1s;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.yeti span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+@keyframes yeti-animate-1 {
+  50% {
+    top: 50%;
+    color: #aaa;
+  }
+
+  100% {
+    top: 0;
+    color: #333;
+  }
+}
+
+@keyframes yeti-animate-2 {
+  50% {
+    bottom: 50%;
+    color: #333;
+  }
+
+  100% {
+    bottom: 0;
+    color: #aaa;
+  }
+}
