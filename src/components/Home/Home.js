@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import LinkList from '../LinkList/LinkList';
 import Stickman from '../Stickman/Stickman';
+import linksConfig from '../../config/linksConfig';
 import classes from './Home.module.css';
 
 class Home extends Component {
@@ -10,7 +11,7 @@ class Home extends Component {
   }
 
   handleImageMouseOver = event => {
-    const hoveredLink = this.props.links.find(l => l.id === event.target.id);
+    const hoveredLink = linksConfig.find(l => l.id === event.target.id);
     this.setState({ hoveredLink });
   };
 
@@ -22,7 +23,7 @@ class Home extends Component {
     return (
       <section className={classes.home}>
         <LinkList 
-          links={this.props.links} 
+          links={linksConfig} 
           onImageMouseOver={this.handleImageMouseOver} 
           onImageMouseOut={this.handleImageMouseOut} 
         />

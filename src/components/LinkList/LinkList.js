@@ -5,7 +5,7 @@ import classes from './LinkList.module.css';
 
 const LinkList = props => {
   const links = props.links.map(l => (
-    <Link className={classes.link} to={l.to}>
+    <Link key={l.id} className={classes.link} to={l.to}>
       <img id={l.id} src={l.image} alt={l.altText} onMouseOver={props.onImageMouseOver} onMouseOut={props.onImageMouseOut} />
       <div>{l.altText}</div>
     </Link>
