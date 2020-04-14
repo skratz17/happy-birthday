@@ -1,0 +1,52 @@
+.stickmanWrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.stickmanWrapper img {
+  width: 300px;
+  height: 500px;
+  display: block;
+}
+
+.stickmanWrapper .faceImage {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.stickmanWrapper .happyBirthdayBubbleWrapper {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+}
+
+.stickmanWrapper .happyBirthdayBubbleWrapper div {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  width: 200px;
+  min-height: 125px;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stickmanWrapper .happyBirthdayBubbleWrapper div:after {
+  content: '';
+  border: 20px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+
+  position: absolute;
+  top: 60px;
+  left: 2%;
+  margin-left: -15px;
+  z-index: -1;
+}

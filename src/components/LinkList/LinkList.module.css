@@ -1,0 +1,41 @@
+.linksWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.link {
+  width: 120px;
+  height: 120px;
+  margin: 1rem 1rem;
+  position: relative;
+}
+
+.link img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.link div {
+  display: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 2;
+}
+ 
+.link:hover div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+} 

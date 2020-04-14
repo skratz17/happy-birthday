@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import classes from './HappyBirthdayTextStyles.module.css';
+import classes from './HappyBirthdayHeader.module.css';
+import textStyles from './HappyBirthdayTextStyles.module.css';
 
 class HappyBirthdayHeader extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class HappyBirthdayHeader extends Component {
   }
 
   setupHeaderAnimation = () => {
-    this.textStyles = Object.keys(classes).filter(s => s.indexOf('-animate') === -1).map(s => classes[s]);
+    this.textStyles = Object.keys(textStyles).filter(s => s.indexOf('-animate') === -1).map(s => textStyles[s]);
     this.prevTimestamp = 0;
     requestAnimationFrame(this.handleHeaderAnimation);
   };
@@ -50,7 +51,7 @@ class HappyBirthdayHeader extends Component {
   render() {
     const { currentClass, hidden } = this.state;
     return (
-      <header id="happy-birthday-header">
+      <header className={classes.happyBirthdayHeader}>
         <h1 className={`${currentClass} ${hidden ? 'hidden' : ''}`}>
           <span>Happy </span>
           <span>Birthday </span>
