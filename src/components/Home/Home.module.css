@@ -4,3 +4,13 @@
   display: grid;
   grid-template-columns: 4fr 2fr;
 }
+
+@media(max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .home > div:last-child {
+    display: none;
+  }
+}

@@ -20,6 +20,9 @@ class Home extends Component {
   }
 
   render() {
+    const { hoveredLink } = this.state;
+    const image = hoveredLink && (hoveredLink.hoverImage || hoveredLink.image);
+    const quote = hoveredLink && hoveredLink.quote;
     return (
       <section className={classes.home}>
         <LinkList 
@@ -27,7 +30,7 @@ class Home extends Component {
           onImageMouseOver={this.handleImageMouseOver} 
           onImageMouseOut={this.handleImageMouseOut} 
         />
-        <Stickman person={this.state.hoveredLink} />
+        <Stickman image={image} quote={quote} person={this.state.hoveredLink} />
       </section>
     );
   }

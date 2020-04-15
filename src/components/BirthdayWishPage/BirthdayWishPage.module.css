@@ -1,0 +1,11 @@
+.birthdayWishPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.birthdayWishPage > * {
+  margin: 1rem 0;
+}

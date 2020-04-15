@@ -2,40 +2,49 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  justify-content: center;
+}
+
+.link, .link img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .link {
-  width: 120px;
-  height: 120px;
-  margin: 1rem 1rem;
+  margin: 1rem;
   position: relative;
-}
-
-.link img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
 }
 
 .link div {
   display: none;
   height: 100%;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  background-color: #000;
+  background-color: rgba(0,0,0,0.3);
   color: #fff;
-  opacity: 0.3;
   pointer-events: none;
   z-index: 2;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
  
 .link:hover div {
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
 } 
+
+@media(max-width: 1100px) {
+  .link, .link img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .link {
+    margin: 0.5rem;
+  }
+}

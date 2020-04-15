@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import classes from './HappyBirthdayHeader.module.css';
 import textStyles from './HappyBirthdayTextStyles.module.css';
@@ -52,11 +53,13 @@ class HappyBirthdayHeader extends Component {
     const { currentClass, hidden } = this.state;
     return (
       <header className={classes.happyBirthdayHeader}>
-        <h1 className={`${currentClass} ${hidden ? 'hidden' : ''}`}>
-          <span>Happy </span>
-          <span>Birthday </span>
-          <span>David!!!</span>
-        </h1>
+        <Link to="/">
+          <h1 className={`${currentClass} ${hidden ? 'hidden' : ''}`}>
+            <span>Happy </span>
+            <span>Birthday </span>
+            <span>David!!!</span>
+          </h1>
+        </Link>
       </header>
     );
   }

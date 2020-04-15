@@ -1,0 +1,24 @@
+.quoteCard {
+  background: #333;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #fff;
+  position: relative;
+}
+
+.quoteCard:after {
+  content: '';
+  border-top: 0;
+  border-bottom: 30px solid #333;
+  border-left: 20px solid rgba(255, 255, 255, 0); 
+  border-right: 20px solid rgba(255, 255, 255, 0);
+  transform: rotate(110deg);
+
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  margin-left: -15px;
+  z-index: -1;
+}

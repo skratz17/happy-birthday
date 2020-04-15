@@ -16,6 +16,10 @@
   transition: opacity 1s;
 }
 
+.happyBirthdayHeader a {
+  text-decoration: none;
+}
+
 @media(max-width: 768px) {
   .happyBirthdayHeader {
     height: 15rem;

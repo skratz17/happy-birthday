@@ -1,0 +1,37 @@
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+}
+
+.imageGallery h2 {
+  margin-bottom: 1rem;
+  flex: 100%;
+}
+
+.imageGallery div {
+  margin: 1rem;
+  flex: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageGallery img {
+  max-width: 600px;
+  max-height: 450px;
+}
+
+@media(max-width: 768px) {
+  .imageGallery img {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}
+
+@media(max-width: 500px) {
+  .imageGallery img {
+    max-width: 300px;
+    max-height: 225px;
+  }
+}
