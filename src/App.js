@@ -10,8 +10,8 @@ const App = () => {
     <div id="app">
       <BrowserRouter>
         <HappyBirthdayHeader />
-        <Route exact path="/" component={Home}></Route>
-        <Route exact path="/:person" component={BirthdayWishPage}></Route>
+        <Route exact path="/happy-birthday/:person" component={BirthdayWishPage}></Route>
+        <Route path="/" component={Home}></Route>
       </BrowserRouter>
     </div>
   );
