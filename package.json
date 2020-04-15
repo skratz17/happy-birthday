@@ -2,6 +2,7 @@
   "name": "happy-birthday",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://skratz17.github.io/happy-birthday",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1"
+    "@types/jest": "^25.2.1",
+    "gh-pages": "^2.2.0"
   }
 }
