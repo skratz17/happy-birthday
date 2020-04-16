@@ -278,7 +278,9 @@ function buildAssetToPeopleMap() {
     '224.jpg': [BRENT],
     '225.jpg': [BRENT],
     '226.jpg': [BRENT],
+    '248.jpg': [BRENT],
     '227.jpg': [BRENT],
+    '247.jpg': [AMMA_AND_PAPA],
 
     // joke bullshit
     '206.jpg': [YETI],
@@ -367,6 +369,17 @@ function addHumanReadableTitles(personToDataMap) {
  * @param {Object} personToDataMap The person to data map.
  */
 function addQuotes(personToDataMap) {
+  personToDataMap[AMMA_AND_PAPA].quotes = [
+    `In the great wilderness of Northern Canada comes a prince of a man with a story to be told.
+    Blessed with brilliance and charm, his ways were tempered with with love and kindness.
+    When he is but seven, he could trounce the family in Black Jack, take their money and never look back.
+    He could out fish all his peers on any dock with only a sliver of bacon.
+    He wasn't always where he said he would be, but that could be forgiven, for he came to his true of sense of duty and devotion to all his family.
+    To all ladies who aspire for such a son, when far from road or tower, hovered in a tent in the black night of a great wilderness: Remember this story of yore:
+    "Honey, you forgot to kiss me goodnight."
+    From, Your Mother`,
+    'We love you Dave - From, Your Father'
+  ];
   personToDataMap[CHARIS].quotes = ['Superior Dave, my favorite Rave. Have a simply wonderful Birthday! Keep smiling brother. Enjoy whatever family can join in the celebration. Next year will be a real celebration..just dont get the purple mouth your merlot likes to leave with you!! Love you!'];
   personToDataMap[DOTTY].quotes = ['Davidada! I love you so much. You are my only brother and I couldn’t have gotten another as good as you. ❤️🥰'];
   personToDataMap[EBBY].quotes = ['David is a wonderful son-in-law, and I love him like a son.'];

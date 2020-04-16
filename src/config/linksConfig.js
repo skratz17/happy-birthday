@@ -15,7 +15,7 @@ const linksConfig = [
   { image: images['nick.jpg'], altText: 'Nick', id: 'nick', to: '/nick-and-alex', quote: 'I say uncle! Happy birthday ole chap!' },
   { image: images['alex.jpg'], altText: 'Alex', id: 'alex', to: '/nick-and-alex' },
   { image: images['chris.jpg'], altText: 'Chris', id: 'chris', to: '/chris' },
-  { image: images['papa.jpg'], altText: 'Papa', id: 'papa', to: '/amma-and-papa' },
+  { image: images['papa.jpg'], altText: 'Papa', id: 'papa', to: '/amma-and-papa', quote: 'We love you Dave' },
   { image: images['amma.jpg'], altText: 'Amma', id: 'amma', to: '/amma-and-papa' },
   { image: images['dotty.jpg'], altText: 'Dotty', id: 'dotty', to: '/dotty', quote: 'Davidada! I love you so much. You are my only brother and I couldn’t have gotten another as good as you. ❤️🥰' },
   { image: images['charis.jpg'], altText: 'Charis', id: 'charis', to: '/charis', quote: 'Superior Dave, my favorite Rave. Have a simply wonderful Birthday! Keep smiling brother. Enjoy whatever family can join in the celebration. Next year will be a real celebration..just dont get the purple mouth your merlot likes to leave with you!! Love you!' },
