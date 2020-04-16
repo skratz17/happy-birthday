@@ -7,6 +7,9 @@ import Home from './components/Home/Home';
 import BirthdayWishPage from './components/BirthdayWishPage/BirthdayWishPage';
 
 const App = () => {
+  // clean up the confetti... otherwise width and height of window gets all wonky
+  setTimeout(() => document.querySelector('canvas').style.display = 'none', 10000);
+
   return (
     <div id="app">
       <Confetti recycle={false} />

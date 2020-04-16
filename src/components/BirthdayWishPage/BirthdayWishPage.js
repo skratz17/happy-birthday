@@ -8,6 +8,7 @@ import VideoGallery from '../VideoGallery/VideoGallery';
 
 const BirthdayWishPage = props => {
   const { person } = props.match.params;
+  if(!pagesConfig[person]) return null;
   const { title, quotes, images, videos } = pagesConfig[person];
   return (
     <div className={`${classes.birthdayWishPage}`}>
