@@ -28,6 +28,7 @@
 .stickmanWrapper .happyBirthdayBubbleWrapper div {
   position: relative;
   background: #fff;
+  color: #000;
   border-radius: 20px;
   width: 200px;
   min-height: 125px;

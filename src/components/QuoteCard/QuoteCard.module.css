@@ -6,6 +6,7 @@
   line-height: 1.2;
   color: #fff;
   position: relative;
+  margin: 2rem 0;
 }
 
 .quoteCard:after {

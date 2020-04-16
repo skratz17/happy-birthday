@@ -19,19 +19,26 @@
 
 .imageGallery img {
   max-width: 600px;
-  max-height: 450px;
+  max-height: 700px;
+}
+
+@media(max-width: 1200px) {
+  .imageGallery img {
+    max-width: 500px;
+    max-height: 500px;
+  }
 }
 
 @media(max-width: 768px) {
   .imageGallery img {
     max-width: 400px;
-    max-height: 300px;
+    max-height: 400px;
   }
 }
 
 @media(max-width: 500px) {
   .imageGallery img {
     max-width: 300px;
-    max-height: 225px;
+    max-height: 300px;
   }
 }

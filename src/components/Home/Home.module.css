@@ -9,8 +9,4 @@
   .home {
     grid-template-columns: 1fr;
   }
-
-  .home > div:last-child {
-    display: none;
-  }
 }
